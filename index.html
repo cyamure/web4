@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 4</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header id="site-header" class="py-2">
+    <div class="container-fluid px-3 px-md-4">
+      <div class="row align-items-center gy-3">
+
+        <div class="col-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+          <img id="logo" src="fernando.png" alt="Логотип" width="50" height="50" class="rounded-circle flex-shrink-0">
+          <h1 id="site-title" class="h5 mb-0 fw-bold">Задание 4</h1>
+        </div>
+
+        <div class="col-12 col-md-7">
+          <nav id="main-menu">
+            <ul class="nav flex-column flex-md-row justify-content-center justify-content-md-end align-items-center gap-3">
+              <li class="nav-item">
+                <a href="#links" class="nav-link">Ссылки</a>
+              </li>
+              <li class="nav-item">
+                <a href="#schedule" class="nav-link">Таблица</a>
+              </li>
+              <li class="nav-item">
+                <a href="#anketa" class="nav-link">Формы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="container my-4">
+    <div class="row gy-4">
+
+      <section id="links" class="col-12 order-2 order-md-1">
+        <div class="card shadow-sm border-0 p-3 p-md-4">
+          <h2 class="h4 text-success mb-3">Список гиперссылок</h2>
+
+          <ul class="d-flex flex-column gap-2 mb-0 ps-3">
+            <li>
+              Абсолютная гиперссылка на главную страницу сайта КубГУ:
+              <a href="http://kubsu.ru/">kubsu.ru</a>
+            </li>
+            <li>
+              Абсолютная гиперссылка на главную страницу КубГУ в HTTPS:
+              <a href="https://kubsu.ru/">kubsu.ru</a>
+            </li>
+            <li>
+              Ссылка-изображение:
+              <br>
+              <a href="https://kubsu.ru/">
+                <img src="image.jpg" alt="Цветок газании — кликни, чтобы перейти на сайт КубГУ" width="280" height="210" class="img-fluid rounded border my-2">
+              </a>
+            </li>
+            <li>
+              Сокращенная ссылка на внутреннюю страницу:
+              <a href="/about.html">страница «о сайте»</a>
+            </li>
+            <li>
+              Сокращённая ссылка на главную:
+              <a href="/">на главную</a>
+            </li>
+            <li>
+              Ссылка на фрагмент текущей страницы:
+              <a href="#anketa">перейти к анкете</a>
+            </li>
+            <li>
+              Ссылка с тремя параметрами в адресе:
+              <a href="https://kubsu.ru/search?query=web&amp;lang=ru&amp;page=2">поиск по сайту</a>
+            </li>
+            <li>
+              Ссылка с параметром id:
+              <a href="https://kubsu.ru/news?id=99">девяносто девятая новость</a>
+            </li>
+            <li>
+              Относительная ссылка на страницу в текущем каталоге:
+              <a href="./contacts.html">контакты</a>
+            </li>
+            <li>
+              Относительная ссылка на страницу в каталоге about:
+              <a href="about/history.html">история</a>
+            </li>
+            <li>
+              Относительная ссылка на страницу в каталоге уровнем выше текущего:
+              <a href="../sitemap.html">карта сайта</a>
+            </li>
+            <li>
+              Относительная ссылка на страницу в каталоге двумя уровнями выше:
+              <a href="../../index.html">самый корень</a>
+            </li>
+            <li>
+              <p class="mb-0">
+                Контекстная ссылка в тексте абзаца: изучить
+                <a href="https://kubsu.ru/ru/node/24">внутренние документы</a> КубГУ можно перейдя
+                по ссылке в тексте.
+              </p>
+            </li>
+            <li>
+              Ссылка на фрагмент страницы стороннего сайта:
+              <a href="https://en.wikipedia.org/wiki/HTML#History">история HTML в Википедии</a>
+            </li>
+            <li>
+              Ссылки из прямоугольных и круглых областей картинки:
+              <div class="table-responsive my-2">
+                <img src="image.jpg" alt="у каждой зоны своя ссылка" width="560" height="420" usemap="#linkmap" class="rounded border">
+                <map name="linkmap">
+                  <area shape="rect" coords="20,20,260,200" href="https://kubsu.ru/" alt="Прямоугольник слева сайт КубГУ">
+                  <area shape="rect" coords="300,20,540,200" href="https://www.w3.org/" alt="Прямоугольник справа сайт W3C">
+                  <area shape="circle" coords="140,310,80" href="https://validator.w3.org/" alt="Левый круг валидатор W3C">
+                  <area shape="circle" coords="420,310,80" href="https://developer.mozilla.org/ru/" alt="Правый круг справочник MDN">
+                </map>
+              </div>
+            </li>
+            <li>
+              Ссылка с пустым href:
+              <a href="">эта же страница</a>
+            </li>
+            <li>
+              Ссылка без href:
+              <a>никуда не веду</a>
+            </li>
+            <li>
+              Ссылка, по которой запрещен переход поисковикам:
+              <a href="https://kubsu.ru/" rel="nofollow">переход запрещён (nofollow)</a>
+            </li>
+            <li>
+              Ссылка, запрещенная для индексации поисковиками:
+              <!--noindex--><a href="https://kubsu.ru/" rel="nofollow">секретная ссылка</a><!--/noindex-->
+            </li>
+            <li>
+              Нумерованный список ссылок с подписями title:
+              <ol class="mb-0 ps-3">
+                <li><a href="https://kubsu.ru/" title="Главная страница КубГУ">КубГУ</a></li>
+                <li><a href="https://www.w3.org/" title="Консорциум Всемирной паутины">W3C</a></li>
+                <li><a href="https://html.spec.whatwg.org/" title="Живой стандарт HTML">Стандарт HTML</a></li>
+              </ol>
+            </li>
+            <li>
+              Ссылка на файл на сервере FTP с авторизацией:
+              <a href="ftp://ftp.kubsu.ru/pub/readme.txt">readme.txt (ftp://student:secret@ftp.kubsu.ru)</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="schedule" class="col-12 order-1 order-md-2">
+        <div class="card shadow-sm border-0 p-3 p-md-4">
+          <h2 class="h4 text-success mb-3">Расписание ПИ22</h2>
+
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover align-middle mb-0 text-center schedule-table">
+              <thead class="table-success align-middle">
+                <tr>
+                  <th scope="col">Пара</th>
+                  <th scope="col">Время</th>
+                  <th scope="col">Понедельник</th>
+                  <th scope="col">Вторник</th>
+                  <th scope="col">Среда</th>
+                  <th scope="col">Четверг</th>
+                  <th scope="col">Пятница</th>
+                  <th scope="col">Суббота</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-bold time-cell">1</td>
+                  <td class="time-cell">08:00–09:20</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-start">Дифференциальные уравнения (лаб.)</td>
+                  <td rowspan="6" class="ksrs-cell fw-bold text-muted">КСРС</td>
+                  <td class="text-start">Математический анализ (лаб.)</td>
+                  <td class="text-muted">—</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold time-cell">2</td>
+                  <td class="time-cell">09:30–10:50</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-start">Разработка пользовательского WEB интерфейса (лаб.)</td>
+                  <td class="text-start">Системы компьютерной математики (лек.)</td>
+                  <td class="text-start">Иностранный язык (лаб.)</td>
+                  <td class="text-start">Системы компьютерной математики (лаб.)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold time-cell">3</td>
+                  <td class="time-cell">11:10–12:30</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-start">Математический анализ (лек.)</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-start">Элективные дисциплины по физической культуре и спорту (лек.)</td>
+                  <td class="text-start">Многофункциональные программные среды (лаб.)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold time-cell">4</td>
+                  <td class="time-cell">12:40–14:00</td>
+                  <td class="text-start">Дифференциальные уравнения (лек.)</td>
+                  <td class="text-start">Математический анализ (лаб.)</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-start">Математический анализ (лек.)</td>
+                  <td class="text-start">Объектно-ориентированное программирование (лек.)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold time-cell">5</td>
+                  <td class="time-cell">14:10–15:30</td>
+                  <td class="text-start">Разработка пользовательского WEB интерфейса (лек.)</td>
+                  <td class="text-start">Бухгалтерский учет (практ.)</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-muted">—</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold time-cell">6</td>
+                  <td class="time-cell">15:40–17:00</td>
+                  <td class="text-start">Объектно-ориентированное программирование (лаб.)</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-muted">—</td>
+                  <td class="text-muted">—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="anketa" class="col-12 order-3 order-md-3">
+        <div class="card shadow-sm border-0 p-3 p-md-4">
+          <h2 class="h4 text-success mb-2">Анкета</h2>
+          <p class="text-muted mb-4">Форма, аккуратно выровненная по 12-колоночной сетке Bootstrap.</p>
+
+          <form action="/" method="post">
+            <div class="row g-3">
+
+              <div class="col-12 col-md-6">
+                <label for="fio-input" class="form-label fw-semibold">ФИО</label>
+                <input id="fio-input" name="fullname" type="text" class="form-control" placeholder="Иванов Иван Иванович">
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="phone-input" class="form-label fw-semibold">Телефон</label>
+                <input id="phone-input" name="phone" type="tel" class="form-control" placeholder="+7 (9**) 000-00-00">
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="email-input" class="form-label fw-semibold">E-mail</label>
+                <input id="email-input" name="email" type="email" class="form-control" placeholder="you@example.com">
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="bday-input" class="form-label fw-semibold">Дата рождения</label>
+                <input id="bday-input" name="birthday" type="date" class="form-control">
+              </div>
+
+              <div class="col-12">
+                <fieldset class="border rounded p-3">
+                  <legend class="float-none w-auto px-2 fs-6 fw-semibold mb-0">Пол</legend>
+                  <div class="form-check form-check-inline mt-1">
+                    <input class="form-check-input" type="radio" name="gender" id="gender-male" value="male" checked>
+                    <label class="form-check-label" for="gender-male">Мужской</label>
+                  </div>
+                  <div class="form-check form-check-inline mt-1">
+                    <input class="form-check-input" type="radio" name="gender" id="gender-female" value="female">
+                    <label class="form-check-label" for="gender-female">Женский</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="col-12">
+                <label for="lang-select" class="form-label fw-semibold">Любимые языки программирования</label>
+                <select id="lang-select" name="languages" multiple size="6" class="form-select">
+                  <option>Pascal</option>
+                  <option>C</option>
+                  <option>C++</option>
+                  <option>JavaScript</option>
+                  <option>PHP</option>
+                  <option selected>Python</option>
+                  <option>Java</option>
+                  <option>Haskel</option>
+                  <option>Clojure</option>
+                  <option>Prolog</option>
+                  <option>Scala</option>
+                </select>
+                <div class="form-text">можно выбрать несколько — зажмите Ctrl</div>
+              </div>
+
+              <div class="col-12">
+                <label for="bio-textarea" class="form-label fw-semibold">Биография</label>
+                <textarea id="bio-textarea" name="biography" rows="4" class="form-control" placeholder="Биография"></textarea>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="contract" id="contract-check" checked>
+                  <label class="form-check-label" for="contract-check">С контрактом ознакомлен(а)</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-success px-4 py-2 fw-semibold">Сохранить</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer id="site-footer" class="py-3 mt-auto">
+    <div class="container text-center text-md-start">
+      <p class="mb-0">© Мирзоев Вадим</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+

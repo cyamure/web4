@@ -1,0 +1,132 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #26332a;
+  background-color: #f2f5f1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #2e7d46;
+}
+
+a:hover {
+  color: #1d5730;
+}
+
+#site-header {
+  background-color: #38714a;
+}
+
+#logo {
+  border: 2px solid #fff;
+  background-color: #fff;
+  object-fit: cover;
+}
+
+#site-title {
+  color: #fff !important;
+}
+
+#main-menu .nav-link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#main-menu .nav-link:hover {
+  background-color: #1d3f27;
+  color: #fff;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #dbe4d8 !important;
+}
+
+.card h2 {
+  color: #2a5738 !important;
+}
+
+.schedule-table {
+  font-size: 14px;
+  min-width: 620px;
+}
+
+.schedule-table th {
+  background-color: #38714a !important;
+  color: #fff !important;
+  border-color: #c9d6c6 !important;
+}
+
+.schedule-table td {
+  border-color: #c9d6c6 !important;
+}
+
+.schedule-table tbody tr:nth-of-type(even)>* {
+  --bs-table-bg: #e9f1e7;
+  background-color: #e9f1e7 !important;
+}
+
+.schedule-table tbody tr:hover>* {
+  --bs-table-hover-bg: #dbead9;
+  background-color: #dbead9 !important;
+}
+
+.schedule-table .time-cell {
+  white-space: nowrap;
+}
+
+.schedule-table .ksrs-cell {
+  background-color: #f2f5f1 !important;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+fieldset {
+  border-color: #b5c4b2 !important;
+}
+
+.form-control,
+.form-select {
+  border-color: #b5c4b2;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #38714a;
+  box-shadow: 0 0 0 0.25rem rgba(56, 113, 74, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: #38714a;
+  border-color: #38714a;
+}
+
+.form-check-input:focus {
+  border-color: #38714a;
+  box-shadow: 0 0 0 0.25rem rgba(56, 113, 74, 0.25);
+}
+
+.btn-success {
+  background-color: #38714a;
+  border-color: #38714a;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: #2a5738 !important;
+  border-color: #2a5738 !important;
+}
+
+#site-footer {
+  background-color: #223c2b;
+  color: #cfdccb;
+  font-size: 14px;
+}
